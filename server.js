@@ -105,7 +105,7 @@ const BooksSchema = new mongoose.Schema({
     let userEmail = req.query.email;
     console.log(req.query.email);
 
-    UserModal.find({email:userEmail},function(err,userData){
+    UserModal.find({email:"shaheenaz99@gmail.com"},function(err,userData){
         if(err){
             console.log('error');
         }
