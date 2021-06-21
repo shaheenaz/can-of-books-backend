@@ -25,7 +25,7 @@ function homePage(req,res){
 
 
 const mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost:27017/favoriteBooks', {useNewUrlParser: true, useUnifiedTopology: true});
+mongoose.connect('mongodb:mongodb+srv://shaheenaz:as1999sh@cluster0.ckxqt.mongodb.net/can-of-books-backend?retryWrites=true&w=majority', {useNewUrlParser: true, useUnifiedTopology: true});
 
 const BooksSchema = new mongoose.Schema({
     name: String,
